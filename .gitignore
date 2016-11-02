@@ -1,3 +1,30 @@
+# We ignore most of the IntelliJ configuraton files as IntelliJ generates them automatically for us...
+.idea/*
+.idea/**/
+.idea_modules
+projectFilesBackup
+# ...there are a few exceptions though.
+# Share code styles, so we standardize as much as possible
+!.idea/codeStyleSettings.xml
+!.idea/projectCodeStyle.xml
+# Compiler flags don't seem to get set automatically by IntelliJ.
+# Perhaps we need to set them in SBT?  For now, share the compiler settings.
+!.idea/scala_compiler.xml
+# Run configurations have to be created manually, so we share them.
+!.idea/runConfigurations
+
+# Ignore these files sometimes inserted by OSX
+.DS_Store
+
+# Ignore tags files in case we want to use Ctags
+tags
+
+# Ignore compiler output
+target
+
+# Ignore NodeJS working directories
+node_modules
+
 *.class
 *.log
 
